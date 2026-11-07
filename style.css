@@ -164,3 +164,23 @@ input[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: #f8717
   .avatar { width: 140px; height: 140px; }
   .shots img { height: 300px; }
 }
+
+/* FAQ accordion */
+.faq { display: grid; gap: 12px; max-width: 760px; }
+.faq details { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 0 20px; transition: border-color 0.2s; }
+.faq details:hover, .faq details[open] { border-color: var(--accent); }
+.faq summary { cursor: pointer; padding: 16px 0; font-weight: 600; }
+.faq p { color: var(--muted); padding-bottom: 16px; }
+
+/* Floating WhatsApp button */
+.wa-float { position: fixed; right: 20px; bottom: 20px; z-index: 20; display: flex; align-items: center; gap: 8px; background: #25d366; color: #062b14; font-weight: 700; padding: 12px 18px; border-radius: 999px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4); transition: transform 0.2s; }
+.wa-float:hover { transform: translateY(-3px); }
+.wa-float svg { width: 20px; height: 20px; fill: currentColor; }
+@media (max-width: 800px) {
+  .wa-float { padding: 14px; }
+  .wa-float span { display: none; }
+}
+
+/* Footer profile links */
+footer a { color: var(--accent); }
+footer a:hover { text-decoration: underline; }

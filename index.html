@@ -6,7 +6,16 @@
 <title>Abdul Bari | Android &amp; Web Developer</title>
 <!-- Favicon: blue rounded square with the "AB" monogram, embedded so no extra file is needed -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EAB%3C/text%3E%3C/svg%3E">
-<meta name="description" content="Portfolio sample of Abdul Bari, Android and web developer. Clean Android apps and fast, responsive websites.">
+<meta name="description" content="Abdul Bari, Android and web developer. Clean Android apps and fast, responsive websites, plus website security assessments.">
+<meta name="theme-color" content="#0a1020">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abdul Bari | Android &amp; Web Developer">
+<meta property="og:description" content="Clean Android apps and fast, responsive websites. Android apps, websites, bug fixing, UI improvements and security assessments.">
+<meta property="og:url" content="https://abdulbari-create.github.io/portfolio/">
+<meta property="og:image" content="https://abdulbari-create.github.io/portfolio/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,6 +30,8 @@
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -114,6 +125,34 @@
     </div>
   </section>
 
+  <!-- How I work: three-step process -->
+  <section id="process">
+    <div class="wrap">
+      <h2>How I work</h2>
+      <p class="lead">A simple, clear process from the first message to delivery.</p>
+      <div class="grid services">
+        <article class="card"><h3>1. Tell me what you need</h3><p>Message me on WhatsApp or use the form. Share your idea, the platform and any deadline.</p></article>
+        <article class="card"><h3>2. Agree on scope and price</h3><p>I reply with a clear plan, timeline and price. Work starts only after we both agree in writing.</p></article>
+        <article class="card"><h3>3. Build, review, deliver</h3><p>You can follow the progress, ask for changes and then receive the finished work.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ: native accordion, no script needed -->
+  <section id="faq">
+    <div class="wrap">
+      <h2>FAQ</h2>
+      <p class="lead">Quick answers to common questions.</p>
+      <div class="faq">
+        <details><summary>How long does a project take?</summary><p>It depends on the scope. You get a clear timeline in the quote, before any work starts.</p></details>
+        <details><summary>How does payment work?</summary><p>The price and payment terms are agreed in writing before work begins, so there are no surprises.</p></details>
+        <details><summary>Can you fix or improve an existing app or website?</summary><p>Yes. I can fix bugs, improve the interface and clean up layouts without rebuilding everything from scratch.</p></details>
+        <details><summary>Do you test any website for security issues?</summary><p>No. I test only websites that you own or have written permission to test, and the scope is agreed in writing first.</p></details>
+        <details><summary>Which technologies do you use?</summary><p>Kotlin and Jetpack Compose for Android, and HTML, CSS and JavaScript for websites.</p></details>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact: messages are sent through Web3Forms and delivered by email -->
   <section id="contact">
     <div class="wrap contact-grid">
@@ -122,6 +161,8 @@
         <p class="lead">Tell me about your project and I will reply with next steps.</p>
         <div class="mail-row"><a class="mail" href="mailto:engr.abdulbarimemon@gmail.com">engr.abdulbarimemon@gmail.com</a><button class="copy" id="copy-email" type="button">Copy</button></div>
         <p class="wa-line"><a class="mail" href="https://wa.me/923072852575" target="_blank" rel="noopener">WhatsApp: +92 307 2852575</a></p>
+        <p class="wa-line"><a class="mail" href="https://github.com/AbdulBari-create" target="_blank" rel="noopener">GitHub: AbdulBari-create</a></p>
+        <p class="wa-line"><a class="mail" href="https://www.upwork.com/freelancers/abdulbarim4" target="_blank" rel="noopener">Upwork profile</a></p>
       </div>
       <form id="contact-form" novalidate>
         <label>Name<input type="text" name="name" autocomplete="name" placeholder="Your name" maxlength="80"><span class="err" data-for="name"></span></label>
@@ -137,8 +178,14 @@
 </main>
 
 <footer>
-  <div class="wrap">&copy; <span id="year"></span> Abdul Bari. Portfolio sample project.</div>
+  <div class="wrap">&copy; <span id="year"></span> Abdul Bari. Android and web development.<br><a href="https://www.upwork.com/freelancers/abdulbarim4" target="_blank" rel="noopener">Upwork</a> · <a href="https://github.com/AbdulBari-create" target="_blank" rel="noopener">GitHub</a></div>
 </footer>
+
+<!-- Floating WhatsApp button -->
+<a class="wa-float" href="https://wa.me/923072852575?text=Hi%20Abdul%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></svg>
+  <span>WhatsApp</span>
+</a>
 
 <script src="script.js" defer></script>
 </body>
