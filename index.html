@@ -51,10 +51,15 @@
   <section id="about">
     <div class="wrap">
       <h2>About</h2>
-      <p class="lead">I am a freelance developer who focuses on clear communication, tidy code and interfaces that feel simple to use. I turn ideas into working apps and websites, and I improve existing ones when they need fixes or a better design.</p>
+      <div class="about-grid">
+        <img class="avatar" src="abdul-bari.jpg" alt="Portrait of Abdul Bari" width="200" height="200">
+        <div>
+<p class="lead">I am a freelance developer who focuses on clear communication, tidy code and interfaces that feel simple to use. I turn ideas into working apps and websites, and I improve existing ones when they need fixes or a better design.</p>
       <ul class="tags">
         <li>Kotlin</li><li>Jetpack Compose</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
       </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -79,14 +84,26 @@
       <h2>Projects</h2>
       <p class="lead">Two sample projects from my portfolio.</p>
       <div class="grid projects">
-        <article class="card">
+        <article class="card project">
           <h3>Expense Manager</h3>
-          <p>An Android app for recording daily expenses, grouping them by category and reviewing spending at a glance.</p>
+          <p>An Android app for tracking income and expenses. Add, edit and delete transactions, filter them by date and type, set a monthly budget, and review spending with a six-month chart, a category breakdown and a PDF export. Includes dark mode, PIN protection and fingerprint unlock.</p>
           <ul class="tags"><li>Android</li><li>Kotlin</li><li>Jetpack Compose</li></ul>
+          <div class="shots">
+            <a href="expense-1.jpg" target="_blank" rel="noopener"><img src="expense-1.jpg" alt="Transactions list with date and type filters" width="400" height="886" loading="lazy"></a>
+            <a href="expense-2.jpg" target="_blank" rel="noopener"><img src="expense-2.jpg" alt="Reports screen with a six-month chart and spending breakdown" width="400" height="886" loading="lazy"></a>
+            <a href="expense-3.jpg" target="_blank" rel="noopener"><img src="expense-3.jpg" alt="Category-wise expenses with percentages" width="400" height="886" loading="lazy"></a>
+            <a href="expense-4.jpg" target="_blank" rel="noopener"><img src="expense-4.jpg" alt="Add transaction screen" width="400" height="886" loading="lazy"></a>
+            <a href="expense-5.jpg" target="_blank" rel="noopener"><img src="expense-5.jpg" alt="Profile screen with account summary" width="400" height="886" loading="lazy"></a>
+            <a href="expense-6.jpg" target="_blank" rel="noopener"><img src="expense-6.jpg" alt="Settings with dark mode, fingerprint unlock and PIN" width="400" height="886" loading="lazy"></a>
+          </div>
+          <details class="demo">
+            <summary>Watch the demo video</summary>
+            <video controls muted playsinline preload="none" poster="expense-1.jpg" src="expense-manager-demo.mp4"></video>
+          </details>
         </article>
-        <article class="card">
+        <article class="card project">
           <h3>Web Vulnerability Dashboard</h3>
-          <p>A web dashboard that presents security findings in a clear, sortable view so issues are easy to review.</p>
+          <p>A web dashboard for security assessments of websites you own or have permission to test. It checks HTTP security headers and other passive indicators, groups findings by severity, keeps a scan history and suggests remediation steps.</p>
           <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
         </article>
       </div>

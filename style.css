@@ -144,3 +144,23 @@ input[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: #f8717
 .btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
 .btn-ghost:hover { background: var(--surface); border-color: var(--accent); }
 .wa-line { margin-top: 12px; }
+
+/* About section with portrait */
+.about-grid { display: grid; grid-template-columns: 200px 1fr; gap: 32px; align-items: center; }
+.avatar { width: 200px; height: 200px; border-radius: 16px; object-fit: cover; border: 2px solid var(--border); }
+.about-grid .lead { margin-bottom: 20px; }
+
+/* Project cards with media: one card per row, screenshots in a scrollable strip */
+.projects { grid-template-columns: 1fr; }
+.project .tags { margin-bottom: 20px; }
+.shots { display: flex; gap: 14px; overflow-x: auto; padding-bottom: 12px; scroll-snap-type: x mandatory; }
+.shots a { flex: 0 0 auto; scroll-snap-align: start; }
+.shots img { display: block; height: 380px; width: auto; border-radius: 14px; border: 1px solid var(--border); }
+.demo { margin-top: 16px; }
+.demo summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.demo video { display: block; margin-top: 12px; max-width: 100%; max-height: 560px; border-radius: 12px; background: #000; }
+@media (max-width: 800px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .avatar { width: 140px; height: 140px; }
+  .shots img { height: 300px; }
+}
