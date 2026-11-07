@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdul Bari | Android &amp; Web Developer</title>
+<!-- Favicon: blue rounded square with the "AB" monogram, embedded so no extra file is needed -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EAB%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Portfolio sample of Abdul Bari, Android and web developer. Clean Android apps and fast, responsive websites.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header: name, title and navigation -->
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">Abdul Bari<small>Android &amp; Web Developer</small></a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero: tagline and main call to action -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Clean Android apps and fast, responsive websites.</h1>
+        <p>I build reliable mobile and web products with Kotlin, Jetpack Compose, HTML, CSS and JavaScript.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Contact me</a>
+          <a class="btn btn-ghost" href="https://wa.me/923072852575" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+      <div class="card-visual" aria-hidden="true">
+        <div class="name">Abdul Bari</div>
+        <div class="role">Android &amp; Web Developer</div>
+        <div class="line">Kotlin · Jetpack Compose · Web</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About: short introduction and skill tags -->
+  <section id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p class="lead">I am a freelance developer who focuses on clear communication, tidy code and interfaces that feel simple to use. I turn ideas into working apps and websites, and I improve existing ones when they need fixes or a better design.</p>
+      <ul class="tags">
+        <li>Kotlin</li><li>Jetpack Compose</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Services: four cards -->
+  <section id="services">
+    <div class="wrap">
+      <h2>Services</h2>
+      <p class="lead">What I can help you with. Security testing is performed only with written permission from the site owner.</p>
+      <div class="grid services">
+        <article class="card"><h3>Android apps</h3><p>Native apps built with Kotlin and Jetpack Compose, from first screen to release build.</p></article>
+        <article class="card"><h3>Responsive websites</h3><p>Fast, accessible pages that look right on phones, tablets and desktops.</p></article>
+        <article class="card"><h3>Bug fixing</h3><p>Clear diagnosis and safe fixes for crashes, layout problems and broken features.</p></article>
+        <article class="card"><h3>UI improvements</h3><p>Cleaner layouts, better spacing and smoother flows for existing apps and sites.</p></article>
+        <article class="card"><h3>Vulnerability assessment</h3><p>Authorized security checks of your website, with a clear report of findings and recommended fixes.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects: sample work -->
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="lead">Two sample projects from my portfolio.</p>
+      <div class="grid projects">
+        <article class="card">
+          <h3>Expense Manager</h3>
+          <p>An Android app for recording daily expenses, grouping them by category and reviewing spending at a glance.</p>
+          <ul class="tags"><li>Android</li><li>Kotlin</li><li>Jetpack Compose</li></ul>
+        </article>
+        <article class="card">
+          <h3>Web Vulnerability Dashboard</h3>
+          <p>A web dashboard that presents security findings in a clear, sortable view so issues are easy to review.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact: messages are sent through Web3Forms and delivered by email -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Contact</h2>
+        <p class="lead">Tell me about your project and I will reply with next steps.</p>
+        <div class="mail-row"><a class="mail" href="mailto:engr.abdulbarimemon@gmail.com">engr.abdulbarimemon@gmail.com</a><button class="copy" id="copy-email" type="button">Copy</button></div>
+        <p class="wa-line"><a class="mail" href="https://wa.me/923072852575" target="_blank" rel="noopener">WhatsApp: +92 307 2852575</a></p>
+      </div>
+      <form id="contact-form" novalidate>
+        <label>Name<input type="text" name="name" autocomplete="name" placeholder="Your name" maxlength="80"><span class="err" data-for="name"></span></label>
+        <label>Email<input type="email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="120"><span class="err" data-for="email"></span></label>
+        <label>Message<textarea name="message" placeholder="How can I help?" maxlength="1000"></textarea><span class="err" data-for="message"></span></label>
+        <!-- Honeypot field: hidden from people, filled in only by spam bots -->
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; <span id="year"></span> Abdul Bari. Portfolio sample project.</div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
